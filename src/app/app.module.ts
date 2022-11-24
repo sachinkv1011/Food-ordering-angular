@@ -7,6 +7,28 @@ import { LoginScreenComponent } from './login-screen/login-screen.component';
 import { RegisterScreenComponent } from './register-screen/register-screen.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { PaymentPortalComponent } from './payment-portal/payment-portal.component';
+import { Route, RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:LoginScreenComponent
+  },
+  {
+    path:"",
+    component:RegisterScreenComponent
+  },
+  {
+    path:"home",
+    component:HomeScreenComponent
+  },
+  {
+    path:"pay",
+    component:PaymentPortalComponent
+  }
+
+]
+
 
 @NgModule({
   declarations: [
@@ -18,7 +40,8 @@ import { PaymentPortalComponent } from './payment-portal/payment-portal.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
