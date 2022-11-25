@@ -8,23 +8,25 @@ import { RegisterScreenComponent } from './register-screen/register-screen.compo
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { PaymentPortalComponent } from './payment-portal/payment-portal.component';
 import { Route, RouterModule, Routes } from '@angular/router';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const myRoute:Routes=[
   {
     path:"",
-    component:LoginScreenComponent
-  },
-  {
-    path:"",
-    component:RegisterScreenComponent
-  },
-  {
-    path:"home",
     component:HomeScreenComponent
   },
   {
+    path:"register",
+    component:RegisterScreenComponent
+  },
+  
+  {
     path:"pay",
     component:PaymentPortalComponent
+  },
+  {
+    path:"login",
+    component:LoginScreenComponent
   }
 
 ]
@@ -36,7 +38,8 @@ const myRoute:Routes=[
     LoginScreenComponent,
     RegisterScreenComponent,
     HomeScreenComponent,
-    PaymentPortalComponent
+    PaymentPortalComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
