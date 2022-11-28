@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./payment-portal.component.css']
 })
 export class PaymentPortalComponent {
+  cardnumber=""
+  expirydate=""
+  cvv=""
+  amount=""
+
+  payment=()=>
+  {
+    let data:any={
+      "cardnumber":this.cardnumber,
+      "expirydate":this.expirydate,
+      "cvv":this.cvv,
+      "amount":this.cvv
+    }
+    console.log(data)
+  }
 
 }

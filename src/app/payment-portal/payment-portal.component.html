@@ -12,22 +12,22 @@
                           <div class="row g-3">
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label for="" class="form-label">Card Number</label>
-                                <input type="text" class="form-control">
+                                <input name="cardnumber" [(ngModel)]="cardnumber" type="text" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label for="" class="form-label">Expiry Date</label>
-                                <input type="date" class="form-control">
+                                <input name="expirydate" [(ngModel)]="expirydate" type="date" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label for="" class="form-label">CVV</label>
-                                <input type="text" class="form-control">
+                                <input name="cvv" [(ngModel)]="cvv" type="text" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <label for="" class="form-label">Final Amount</label>
-                                <input type="text" class="form-control">
+                                <input name="amount" [(ngModel)]="amount" type="text" class="form-control">
                             </div>
                             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                                <button class="btn btn-success">Pay</button>
+                                <button (click)="payment()" class="btn btn-success">Pay</button>
                             </div>
                         </div>
                           
