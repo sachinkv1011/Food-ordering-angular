@@ -13,7 +13,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 const myRoute:Routes=[
   {
     path:"",
-    component:HomeScreenComponent
+    component:LoginScreenComponent
   },
   {
     path:"register",
@@ -25,8 +25,8 @@ const myRoute:Routes=[
     component:PaymentPortalComponent
   },
   {
-    path:"login",
-    component:LoginScreenComponent
+    path:"home",
+    component:HomeScreenComponent
   }
 
 ]
